@@ -1,6 +1,9 @@
 # CmdwithAI
 Linux common with AI
 
+功能：提供给不熟悉Linux指令的新手，通过自然语言完成linux指令生成和执行。
+夸张一点的描述：给Linux赋能，能够理解自然语言的指令。
+
 
 1、 先要赋权，可执行。 chmod +x cai.sh
 
@@ -16,4 +19,11 @@ Linux common with AI
 ./cai.sh "帮我解决 tree: command not found"
 ./cai.sh "编辑 agent_AutoLinuxCMD.json ，跳转到 第5行"
 ./cai.sh "删除当前目录下，除了agent_AutoLinuxCMD.json和cai.sh 之外的其他文件"
+
+
 ```
+
+
+
+梦想：让机器和AI真的活过来。
+
