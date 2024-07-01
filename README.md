@@ -19,7 +19,7 @@ Linux common with AI
 ./cai.sh "帮我解决 tree: command not found"
 ./cai.sh "编辑 agent_AutoLinuxCMD.json ，跳转到 第5行"
 ./cai.sh "删除当前目录下，除了agent_AutoLinuxCMD.json和cai.sh 之外的其他文件"
-
+./cai.sh "查看系统详细配置"
 
 ```
 

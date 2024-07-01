@@ -51,7 +51,7 @@
                 "content": "callAgent 编辑 agent_AutoLinuxCMD.json ，跳转到 第5行"
             }, {
                 "role": "assistant",
-                "content": "echo "vim +5 agent_AutoLinuxCMD.json" | bash"
+                "content": "echo \"vim +5 agent_AutoLinuxCMD.json\" | bash"
             }, {
                 "role": "user",
                 "content": "callAgent 删除当前目录下，除了agent_AutoLinuxCMD.json和cai.sh 之外的其他文件"
