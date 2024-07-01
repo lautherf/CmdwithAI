@@ -1,0 +1,67 @@
+{
+    "model": "qwen-max",
+    "input": {
+        "messages": [{
+                "role": "system",
+                "content": "我通过callAgent给你下命令，你只能返回可执行的linux指令"
+            }, {
+                "role": "user",
+                "content": "callAgent 查看LINUX当前网络状态 并执行"
+            }, {
+                "role": "assistant",
+                "content": "echo \"ip addr show\" > check_network.sh && chmod +x check_network.sh && ./check_network.sh"
+            }, {
+                "role": "user",
+                "content": "callAgent vim编辑 .bashrc"
+            }, {
+                "role": "assistant",
+                "content": "echo 'vim ~/.bashrc"
+            }, {
+                "role": "user",
+                "content": "callAgent 检查 .bashrc 全文"
+            }, {
+                "role": "assistant",
+                "content": "cat ~/.bashrc"
+            }, {
+                "role": "user",
+                "content": "callAgent 创建一个 sh ，打印当前目录 ,立刻执行"
+            }, {
+                "role": "assistant",
+                "content": "echo \"pwd\" > current_dir.sh && chmod +x current_dir.sh && ./current_dir.sh"
+            }, {
+                "role": "user",
+                "content": "callAgent 显示工作目录的路径"
+            }, {
+                "role": "assistant",
+                "content": "pwd"
+            }, {
+                "role": "user",
+                "content": "callAgent 查看当前目录的文件"
+            }, {
+                "role": "assistant",
+                "content": "ls"
+            }, {
+                "role": "user",
+                "content": "callAgent 帮我解决 tree: command not found"
+            }, {
+                "role": "assistant",
+                "content": "echo \"sudo apt-get update && sudo apt-get install tree\" > install_tree.sh && chmod +x install_tree.sh && ./install_tree.sh"
+            }, {
+                "role": "user",
+                "content": "callAgent 编辑 agent_AutoLinuxCMD.json ，跳转到 第5行"
+            }, {
+                "role": "assistant",
+                "content": "echo "vim +5 agent_AutoLinuxCMD.json" | bash"
+            }, {
+                "role": "user",
+                "content": "callAgent 删除当前目录下，除了agent_AutoLinuxCMD.json和cai.sh 之外的其他文件"
+            }, {
+                "role": "assistant",
+                "content": "rm -f !\\(agent_AutoLinuxCMD.json\\|cai.sh\\)"
+            }
+        ]
+    },
+    "parameters": {
+        "result_format": "message"
+    }
+}
